@@ -4,13 +4,13 @@ body {
   font-family: Arial;
 }
 nav {
-  position: fixed;
+  
   width: 100%;
   max-width: 300px;
   bottom: 0;
   top: 0;
   display: block;
-  min-height: 300px;
+
   height: 100%;
   color: #fff;
   opacity: 0.8;
@@ -56,7 +56,7 @@ nav li:hover {
   color: rgba(75, 105, 176, 1);
 }
 nav li#user-info {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 80%;
 }
@@ -83,7 +83,7 @@ nav li#user-info > span:after {
 .content-wrapper {
   width: calc(100% - 300px);
   height: 100%;
-  position: fixed;
+  
   background: #fff;
   left: 300px;
   padding: 20px;
@@ -126,4 +126,18 @@ nav li#user-info > span:after {
   background: #fff;
   border-radius: 10px;
   padding: 30px;
+}
+
+
+#pricing
+{
+  padding: 100px;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-column
+{
+  padding: 3% 2%;
 }
