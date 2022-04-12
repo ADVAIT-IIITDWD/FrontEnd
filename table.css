@@ -16,3 +16,6 @@ input{
     border: 2px;
 
 }
+.cust:hover{
+    background-color: rgb(99, 91, 91); 
+}
