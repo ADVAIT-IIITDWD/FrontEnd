@@ -13,9 +13,19 @@ input{
     list-style: none;
 }
 .btn{
-    border: 2px;
+    border: 10px;
+    font-size:1.3rem;
+    border-radius: 10px;
+    margin-left: 50%;
+
 
 }
-.cust:hover{
+.btn:hover{
+    background-color: rgb(65, 62, 62);
+    color: white;
+
+}
+li:hover{
     background-color: rgb(99, 91, 91); 
+    color: white;
 }

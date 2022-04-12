@@ -141,3 +141,7 @@ nav li#user-info > span:after {
 {
   padding: 3% 2%;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
