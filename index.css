@@ -3,6 +3,12 @@ body {
   background: #181824;
   font-family: Arial;
 }
+
+.functn {
+  color: white;
+  text-decoration: solid;
+}
+
 nav {
   
   width: 100%;
