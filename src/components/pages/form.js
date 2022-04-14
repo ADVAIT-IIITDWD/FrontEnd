@@ -8,7 +8,7 @@ const form = ({requested_form}) => {
     let array = [];
     for(let i = 0; i<table_len; i++){
         // console.log(i);
-        if(tables[i].id == requested_form){
+        if(tables[i].id === requested_form){
             // console.log(requested_form);
             array = tables[i].attr;
             // console.log();
