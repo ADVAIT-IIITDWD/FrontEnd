@@ -1,6 +1,6 @@
 import React from 'react';
 import tables from './../api/tables';
-import attributes from '../api/attributes';
+import attributes from './../api/attributes';
 
 const form = ({requested_form}) => {
     // console.log(requested_form);
@@ -31,7 +31,7 @@ const form = ({requested_form}) => {
                 {x.map((ele) => {
                   return(
                 <div className="field" key={ele.attr_id}>
-                      <input type={ele.type} id={ele.id} maxlength={ele.max_length} placeholder={ele.placeholder} required />
+                      <input type={ele.type} id={ele.id} maxlength={ele.max_length} placeholder={ele.placeholder} minLength={ele.min_length} pattern={ele.pattern} required />
                       <span>{ele.placeholder}</span>
                     </div>
                 )})}
