@@ -881,12 +881,12 @@ const attributes = [
         placeholder:"Coverage Terms",
         pattern:""
     },{
-        id:"coverage_description",
+        id:"nok_id",
         type:"text",
         attr_id:110,
         max_length:20,
         min_length:0,
-        placeholder:"Coverage",
+        placeholder:"NOK ID",
         pattern:""
     },{
         id:"product_no",
