@@ -11,18 +11,22 @@ input{
 }
 .table-list{
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 .btn{
-    border: 10px;
+    border: 1px solid grey;
     font-size:1.3rem;
     border-radius: 10px;
     margin-left: 50%;
 
 
+
 }
 .btn:hover{
-    background-color: rgb(65, 62, 62);
-    color: white;
+    background-color: rgb(27, 148, 25);
+    color: rgb(255, 255, 255);
 
 }
 li:hover{
@@ -30,5 +34,10 @@ li:hover{
     color: white;
 }
 .label-class{
+<<<<<<< HEAD
     width: 85%;
   }
+=======
+  width: 85%;
+}
+>>>>>>> 9b7a18b8b7d383c8ec29b9399e4401d7344d5777
