@@ -850,14 +850,6 @@ const attributes = [
         placeholder:"Incident Report Description",
         pattern:""
     },{
-        id:"coverage_amount",
-        type:"text",
-        attr_id:104,
-        max_length:20,
-        min_length:0,
-        placeholder:"Coverage Amount",
-        pattern:""
-    },{
         id:"coverage_type",
         type:"text",
         attr_id:106,
@@ -889,12 +881,12 @@ const attributes = [
         placeholder:"Coverage Terms",
         pattern:""
     },{
-        id:"coverage_description",
+        id:"nok_id",
         type:"text",
         attr_id:110,
         max_length:20,
         min_length:0,
-        placeholder:"Coverage",
+        placeholder:"NOK ID",
         pattern:""
     },{
         id:"product_no",
@@ -951,6 +943,14 @@ const attributes = [
         max_length:20,
         min_length:0,
         placeholder:"Valid Till Date",
+        pattern:""
+    },{
+        id:"coverage_amount",
+        type:"text",
+        attr_id:118,
+        max_length:20,
+        min_length:0,
+        placeholder:"Coverage Amount",
         pattern:""
     }
 ]

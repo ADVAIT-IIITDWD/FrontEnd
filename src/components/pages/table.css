@@ -29,3 +29,6 @@ li:hover{
     background-color: rgb(99, 91, 91); 
     color: white;
 }
+.label-class{
+    width: 85%;
+  }
