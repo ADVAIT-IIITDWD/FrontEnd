@@ -9,87 +9,88 @@ const Table_select = () => {
 
             <div >
             <li>
-                <input  type="radio" name="customers" value="customer" />Customer<br />
+                <input  type="radio" name="app" value="customer"/>Customer<br/>
     
             </li>
             </div>
-            <li>
-                <input type="radio" name="Application" value="Application" />Application<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Quote" value="Quote" />Quote<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Insurance_Policy" value="Insurance_Policy" />Insurance Policy<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Premium_Payment" value="Premium_Payment" />Premium Payment<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Vehicle" value="Vehicle" />Vehicle<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Claim" value="Claim" />Claim<br />
-    
-            </li>
-            <li>
-    
-                <input type="radio" name="Claim_Settlement" value="Claim_Settlement" />Claim Settlement<br />
-            </li>
-            <li>
-                <input type="radio" name="Staff" value="Staff" />Staff<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Department" value="Department" />Department<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Office" value="Office" />Office<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Membership" value="Membership" />Membership<br />
-    
-            </li>
-            <li>
-                <input type="radio" name="Vehicle_Service" value="Vehicle_Service" />Vehicle Service<br />
-            </li>
-            <li>
-                <input type="radio" name="Nok" value="Nok" />Nok<br />
-            </li>
-            <li>
-                <input type="radio" name="Insurance_Company" value="Insurance_Company" />Insurance Company<br />
-            </li>
-            <li>
-                <input type="radio" name="Policy_Renewable" value="Policy_Renewable" />Policy Renewable<br />
-            </li>
-            <li>
-                <input type="radio" name="Incident" value="Incident" />Incident<br />
-            </li>
-            <li>
-                <input type="radio" name="Incident_Report" value="Incident_Report" />Incident Report<br />
-            </li>
-            <li>
-                <input type="radio" name="Coverage" value="Coverage" />Coverage<br />
-            </li>
-            <li>
-                <input type="radio" name="Product" value="Product" />Product<br />
-            </li>
-            <li>
-                <input type="radio" name="Receipt" value="Receipt" />Receipt<br />
-            </li>
-            <li>
-                <input type="radio" name="Insurance_Policy_Coverage" value="Insurance_Policy_Coverage" />Insurance Policy Coverage<br />
-            </li>
-        </ul> 
 
-        <button class="btn" type="submit">Submit</button>
+            <li>
+                <input type="radio" name="app" value="app"/>Application<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="quote"/>Quote<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="policy"/>Insurance Policy<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="payment"/>Premium_Payment<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="vehicle"/>Vehicle<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="claim"/>Claim<br/>
+    
+            </li>
+            <li>
+    
+                <input type="radio" name="app" value="settlement" />Claim_Settlement<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="staff" />Staff<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="dept" />Department<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="office" />Office<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="member" />Membership<br/>
+    
+            </li>
+            <li>
+                <input type="radio" name="app" value="service" />Vehicle_Service<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="NOK" />Nok<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="company" />Insurance Company<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="renew" />Policy Renewable<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="incident" />Incident<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="report" />Incident Report<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="coverage" />Coverage<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="product" />Product<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="receipt" />Receipt<br/>
+            </li>
+            <li>
+                <input type="radio" name="app" value="policy_coverage" />Insurance Policy Coverage<br/>
+            </li>
+        </ul>   
+
+        <input class="btn" type="submit" value="Submit"/>
 
     </form>
     </>
@@ -97,4 +98,3 @@ const Table_select = () => {
 }
 
 export default Table_select;
-
