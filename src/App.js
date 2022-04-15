@@ -6,9 +6,9 @@ import Table_select from './components/pages/table_select';
 function App() {
   return (
     <>
-    {/* <Form requested_form={"Application"} /> */}
+    <Form requested_form={"Application"} />
     {/* <Home /> */}
-    <Table_select />
+    {/* <Table_select /> */}
     </>
   );
 }
