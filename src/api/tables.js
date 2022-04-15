@@ -494,11 +494,7 @@ const tables = [
         id:"NOK",
         attr:[
             {
-<<<<<<< HEAD
                 id:110,
-=======
-                id:'*',
->>>>>>> 9b7a18b8b7d383c8ec29b9399e4401d7344d5777
                 val:"NOK_ID"
             },
             {
