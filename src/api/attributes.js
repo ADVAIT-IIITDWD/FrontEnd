@@ -850,14 +850,6 @@ const attributes = [
         placeholder:"Incident Report Description",
         pattern:""
     },{
-        id:"coverage_amount",
-        type:"text",
-        attr_id:104,
-        max_length:20,
-        min_length:0,
-        placeholder:"Coverage Amount",
-        pattern:""
-    },{
         id:"coverage_type",
         type:"text",
         attr_id:106,
@@ -951,6 +943,14 @@ const attributes = [
         max_length:20,
         min_length:0,
         placeholder:"Valid Till Date",
+        pattern:""
+    },{
+        id:"coverage_amount",
+        type:"text",
+        attr_id:118,
+        max_length:20,
+        min_length:0,
+        placeholder:"Coverage Amount",
         pattern:""
     }
 ]
