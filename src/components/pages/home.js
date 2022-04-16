@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './../layouts/navbar';
-import Query_card from './../layouts/query_card';
+import QueryCard from './../layouts/QueryCard';
 import './home.css';
 
 const home = () => {
@@ -14,12 +14,12 @@ const home = () => {
                 <section class="white-section" id="pricing">
 
                     <div class="row">
-                        <Query_card />
-                        <Query_card />
-                        <Query_card />
-                        <Query_card />
-                        <Query_card />
-                        <Query_card />
+                        <QueryCard num="1"/>
+                        <QueryCard num="2"/>
+                        <QueryCard num="3"/>
+                        <QueryCard num="4"/>
+                        <QueryCard num="5"/>
+                        <QueryCard num="6"/>
                     </div>
 
 
