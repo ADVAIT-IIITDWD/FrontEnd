@@ -5,7 +5,7 @@ const Table_select = () => {
   return (
     <>
         <form action="">
-        <ul class="table-list">
+        <ul class="table-list ">
 
         <li>
                 <input type="radio" id="customer" name="app" value="customer"/>

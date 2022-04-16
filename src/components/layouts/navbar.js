@@ -1,3 +1,4 @@
+import { Link, Navigate , useNavigate} from "react-router-dom";
 import React from 'react'
 import './navbar.css';
 
@@ -9,11 +10,19 @@ const Navbar = () => {
                   <div>Vehicle Insurance Database</div>
               </div>
               <ul class="vertical-menu">
-                  <li><a class="functn" href="table.html">Add Data</a></li>
-                  <li><a class="functn" href="table.html">Alter Data</a></li>
-                  <li><a class="functn" href="table.html">Delete Data</a></li>
+                <Link to='/table_select'>
+                  <li><a class="functn" href="/table_select">Add Data</a></li>
+                </Link>
+                <Link to='/table_select'>
+                  <li><a class="functn" href="/table_select">Alter Data</a></li>
+                </Link>
+                <Link to='/table_select'>
+                  <li><a class="functn" href="/table_select">Delete Data</a></li>
+                </Link>
                   <hr/>
-                  <li><a class="functn" href="table.html">View Data</a></li>
+                <Link to='/table_select'>
+                  <li><a class="functn" href="/table_select">View Data</a></li>
+                </Link>
                   <hr/>
                   <li id="user-info" style={{marginTop: "170%"}}>Team ADVAIT<span>DBMS</span></li>
               </ul>

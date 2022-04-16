@@ -3,6 +3,7 @@
     margin: 20px;
     padding: 20px;
     font-size:25px;
+    text-align: 1rem;
 }
 input{
     margin: 20px;
@@ -10,29 +11,38 @@ input{
     border: 5px solid red;
 }
 .table-list{
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    list-style:none;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    text-align:inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-decoration: wavy;
+    font-weight: 450;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 .btn{
     border: 1px solid grey;
     font-size:1.3rem;
     border-radius: 10px;
     margin-left: 50%;
-
-
-
 }
 .btn:hover{
     background-color: rgb(27, 148, 25);
     color: rgb(255, 255, 255);
 
 }
-li:hover{
+/* li:hover{
     background-color: rgb(99, 91, 91); 
     color: white;
 }
 .label-class{
     width: 85%;
-  } */
+  }
+
+.label-class:hover{
+    background-color: rgb(99, 91, 91); 
+    color: white;
+    border-radius: 10px;
+} */
