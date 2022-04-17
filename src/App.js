@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/table_select" exact element={<Table_select />} />
-        <Route path="/form" exact element={<Form />} />
+        <Route path="/form" exact element={<Form requested_form={"Application"} />} />
       </Routes>
       </BrowserRouter>
     </>
