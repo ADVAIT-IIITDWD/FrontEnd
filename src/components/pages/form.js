@@ -2,9 +2,16 @@ import React from 'react';
 import tables from './../api/tables';
 import attributes from './../api/attributes';
 import './form.css'
+import { useLocation } from "react-router-dom";
+import queryString from "query-string";
 
-const form = ({requested_form}) => {
 
+const Form = () => {
+  const { search } = useLocation();
+  // console.log(search);
+  const { app } = queryString.parse(search);
+  // console.log(app);
+  let requested_form = app;
   const abc= tables.filter((ele,ind) =>{
       return requested_form === ele.id;
     });
@@ -37,4 +44,4 @@ const form = ({requested_form}) => {
   )
 }
 
-export default form;
+export default Form;

@@ -439,7 +439,7 @@ const attributes = [
         attr_id:54,
         max_length:20,
         min_length:0,
-        placeholder:"Company N ame",
+        placeholder:"Company Name",
         pattern:""
     },{
         id:"Staff_fname",
