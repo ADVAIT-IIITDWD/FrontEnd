@@ -115,7 +115,7 @@ const tables = [
         ]
     },
     {
-        id:"Insurance_policy",
+        id:"Insurance policy",
         attr:[
             {
                 id:21,
@@ -152,7 +152,7 @@ const tables = [
         ]
     },
     {
-        id:"Premium_payment",
+        id:"Premium Payment",
         attr:[
             {
                 id:27,
@@ -197,47 +197,47 @@ const tables = [
             },
             {
                 id:32,
-                val:"DEPENDENT_NOK_ID"
+                val:"dependent_nok_id"
             },
             {
                 id:33,
-                val:"VEHICLE_REGISTRATION_NUMBER"
+                val:"vehicle_registration_number"
             },
             {
                 id:34,
-                val:"VEHICLE_VALUE"
+                val:"vehicle_value"
             },
             {
                 id:35,
-                val:"VEHICLE_TYPE"
+                val:"vehicle_type"
             },
             {
                 id:36,
-                val:"VEHICLE_SIZE"
+                val:"vehicle_size"
             },
             {
                 id:37,
-                val:"VEHICLE_NUMBER_OF_SEAT"
+                val:"vehicle_number_of_seat"
             },
             {
                 id:38,
-                val:"VEHICLE_MANUFACTURER"
+                val:"vehicle_manufacturer"
             },
             {
                 id:39,
-                val:"VEHICLE_ENGINE_NUMBER"
+                val:"vehicle_engine_number"
             },
             {
                 id:40,
-                val:"VEHICLE_CHASIS_NUMBER"
+                val:"vehicle_chasis_number"
             },
             {
                 id:41,
-                val:"VEHICLE_NUMBER"
+                val:"vehicle_number"
             },
             {
                 id:42,
-                val:"VEHICLE_MODEL_NUMBER"
+                val:"vehicle_model_number"
             }
             
         ]
@@ -247,7 +247,7 @@ const tables = [
         attr:[
             {
                 id:43,
-                val:"CLAIM_ID"
+                val:"claim_id"
             },
             {
                 id:0,
@@ -255,501 +255,501 @@ const tables = [
             },
             {
                 id:21,
-                val:"AGREEMENT_ID"
+                val:"agreement_id"
             },
             {
                 id:44,
-                val:"CLAIM_AMOUNT"
+                val:"claim_amount"
             },
             {
                 id:45,
-                val:"INCIDENT_ID"
+                val:"incident_id"
             },
             {
                 id:46,
-                val:"DAMAGE_TYPE"
+                val:"damage_type"
             },
             {
                 id:47,
-                val:"DATE_OF_CLAIM"
+                val:"date_of_claim"
             },
             {
                 id:48,
-                val:"CLAIM_STATUS"
+                val:"claim_status"
             }
             
         ]
     },
     {
-        id:"CLAIM_SETTLEMENT",
+        id:"Claim Settlement",
         attr:[
             {
                 id:49,
-                val:"CLAIM_SETTLEMENT_ID"
+                val:"claim_settlement_id"
             },
             {
                 id:43,
-                val:"CLAIM_ID"
+                val:"claim_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:31,
-                val:"VEHICLE_ID"
+                val:"vehicle_id"
             },
             {
                 id:50,
-                val:"DATE_SETTLED"
+                val:"date_settled"
             },
             {
                 id:51,
-                val:"AMOUNT_PAID"
+                val:"amount_paid"
             },
             {
                 id:52,
-                val:"COVERAGE_ID"
+                val:"coverage_id"
             }
         ]
     },
     {
-        id:"STAFF",
+        id:"Staff",
         attr:[
             {
                 id:53,
-                val:"STAFF_ID"
+                val:"staff_id"
             },
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:55,
-                val:"STAFF_FNAME"
+                val:"staff_fname"
             },
             {
                 id:56,
-                val:"STAFF_LNAME"
+                val:"staff_lname"
             },
             {
                 id:57,
-                val:"STAFF_ADDRESS"
+                val:"staff_address"
             },
             {
                 id:58,
-                val:"STAFF_CONTACT"
+                val:"staff_contact"
             },
             {
                 id:59,
-                val:"STAFF_GENDER"
+                val:"staff_gender"
             },
             {
                 id:60,
-                val:"STAFF_MARITAL_STATUS"
+                val:"staff_marital_status"
             },
             {
                 id:61,
-                val:"STAFF_NATIONALITY"
+                val:"staff_nationality"
             },
             {
                 id:62,
-                val:"STAFF_QUALIFICATION"
+                val:"staff_qualification"
             },
             {
                 id:63,
-                val:"STAFF_ALLOWANCE"
+                val:"staff_allowance"
             },
             {
                 id:64,
-                val:"STAFF_PPS_NUMBER"
+                val:"staff_pps_number"
             }
         ]
     },
     {
-        id:"DEPARTMENT",
+        id:"Department",
         attr:[
             {
                 id:22,
-                val:"DEPARTMENT_NAME"
+                val:"department_name"
             },
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:65,
-                val:"OFFICE"
+                val:"office"
             },
             {
                 id:66,
-                val:"CONTACT_INFORMATION"
+                val:"contact_information"
             },
             {
                 id:67,
-                val:"DEPARTMENT_STAFF"
+                val:"department_staff"
             },
             {
                 id:68,
-                val:"DEPARTMENT_LEADER"
+                val:"department_leader"
             }
         ]
     },
     {
-        id:"OFFICE",
+        id:"Office",
         attr:[
             {
                 id:69,
-                val:"OFFICE_NAME"
+                val:"office_name"
             },
             {
                 id:22,
-                val:"DEPARTMENT_NAME"
+                val:"department_name"
             },
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:70,
-                val:"OFFICE_LEADER"
+                val:"office_leader"
             },
             {
                 id:66,
-                val:"CONTACT_INFORMATION"
+                val:"contact_information"
             },
             {
                 id:71,
-                val:"ADDRESS"
+                val:"address"
             },
             {
                 id:72,
-                val:"ADMIN_COST"
+                val:"admin_cost"
             },
             {
                 id:73,
-                val:"STAFF"
+                val:"staff"
             }
         ]
     },
     {
-        id:"MEMBERSHIP",
+        id:"Membership",
         attr:[
             {
                 id:74,
-                val:"MEMBERSHIP_ID"
+                val:"membership_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:75,
-                val:"MEMBERSHIP_TYPE"
+                val:"membership_type"
             },
             {
                 id:76,
-                val:"ORGANISATION_CONTACT"
+                val:"organisation_contact"
             }
         ]
     },
     {
-        id:"VEHICLE_SERVICE",
+        id:"Vehicle Service",
         attr:[
             {
                 id:77,
-                val:"VEHICLE_SERVICE"
+                val:"vehicle_service"
             },
             {
                 id:12,
-                val:"VEHICLE_ID"
+                val:"vehicle_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:22,
-                val:"DEPARTMENT_NAME"
+                val:"department_name"
             },
             {
                 id:78,
-                val:"VEHICLE_SERVICE_ADDRESS"
+                val:"vehicle_service_address"
             },
             {
                 id:79,
-                val:"VEHICLE_SERVICE_CONTACT"
+                val:"vehicle_service_contact"
             },
             {
                 id:80,
-                val:"VEHICLE_SERVICE_INCHARGE"
+                val:"vehicle_service_incharge"
             },
             {
                 id:81,
-                val:"VEHICLE_SERVICE_TYPE"
+                val:"vehicle_service_type"
             }
         ]
     },
     {
-        id:"NOK",
+        id:"Nok",
         attr:[
             {
                 id:110,
-                val:"NOK_ID"
+                val:"nok_id"
             },
             {
                 id:21,
-                val:"AGREEMENT_ID"
+                val:"agreement_id"
             },
             {
                 id:11,
-                val:"APPLICATION_ID"
+                val:"application_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:82,
-                val:"NOK_NAME"
+                val:"nok_name"
             },
             {
                 id:83,
-                val:"NOK_ADDRESS"
+                val:"nok_address"
             },
             {
                 id:84,
-                val:"NOK_PHONE_NUMBER"
+                val:"nok_phone_number"
             },
             {
                 id:85,
-                val:"NOK_MARITAL_STATUS"
+                val:"nok_marital_status"
             },
             {
                 id:86,
-                val:"NOK_GENDER"
+                val:"nok_gender"
             }
         ]
     },
     {
-        id:"INSURANCE_COMPANY",
+        id:"Insurance Company",
         attr:[
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:87,
-                val:"COMPANY_ADDRESS"
+                val:"company_address"
             },
             {
                 id:88,
-                val:"COMPANY_CONTACT_NUMBER"
+                val:"company_contact_number"
             },
             {
                 id:89,
-                val:"COMPANY_FAX"
+                val:"company_fax"
             },
             {
                 id:90,
-                val:"COMPANY_EMAIL"
+                val:"company_email"
             },
             {
                 id:91,
-                val:"COMPANY_WEBSITE"
+                val:"company_website"
             },
             {
                 id:92,
-                val:"COMPANY_LOCATION"
+                val:"company_location"
             },
             {
                 id:93,
-                val:"COMPANY_DEPARTMENT_NAME"
+                val:"company_department_name"
             },
             {
                 id:94,
-                val:"COMPANY_OFFICE_NAME"
+                val:"company_office_name"
             }
         ]
     },
     {
-        id:"POLICY_RENEWABLE",
+        id:"Policy Renewable",
         attr:[
             {
                 id:95,
-                val:"POLICY_RENEWABLE_ID"
+                val:"policy_renewable_id"
             },
             {
                 id:21,
-                val:"AGREEMENT_ID"
+                val:"agreement_id"
             },
             {
                 id:11,
-                val:"APPLICATION_ID"
+                val:"application_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:96,
-                val:"DATE_OF_RENEWAL"
+                val:"date_of_renewal"
             },
             {
                 id:97,
-                val:"TYPE_OF_RENEWAL"
+                val:"type_of_renewal"
             }
         ]
     },
     {
-        id:"INCIDENT",
+        id:"Incident",
         attr:[
             {
                 id:98,
-                val:"INCIDENT_ID"
+                val:"incident_id"
             },
             {
                 id:99,
-                val:"INCIDENT_TYPE"
+                val:"incident_type"
             },
             {
                 id:100,
-                val:"INCIDENT_DATE"
+                val:"incident_date"
             },
             {
                 id:18,
-                val:"DESCRIPTION"
+                val:"description"
             }
         ]
     },
     {
-        id:"INCIDENT_REPORT",
+        id:"Incident Report",
         attr:[
             {
                 id:101,
-                val:"INCIDENT_REPORT_ID"
+                val:"incident_report_id"
             },
             {
                 id:45,
-                val:"INCIDENT_ID"
+                val:"incident_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:102,
-                val:"INCIDENT_INSPECTOR"
+                val:"incident_inspector"
             },
             {
                 id:103,
-                val:"INCIDENT_COST"
+                val:"incident_cost"
             },
             {
                 id:104,
-                val:"INCIDENT_TYPE"
+                val:"incident_type"
             },
             {
                 id:105,
-                val:"INCIDENT_REPORT_DESCRIPTION"
+                val:"incident_report_description"
             }
             
         ]
     },
     {
-        id:"COVERAGE",
+        id:"Coverage",
         attr:[
             {
                 id:52,
-                val:"COVERAGE_ID"
+                val:"coverage_id"
             },
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:118,
-                val:"COVERAGE_AMOUNT"
+                val:"coverage_amount"
             },
             {
                 id:106,
-                val:"COVERAGE_TYPE"
+                val:"coverage_type"
             },
             {
                 id:107,
-                val:"COVERAGE_LEVEL"
+                val:"coverage_level"
             },
             {
                 id:19,
-                val:"PRODUCT_ID"
+                val:"product_id"
             },
             {
                 id:108,
-                val:"COVERAGE_DESCRIPTION"
+                val:"coverage_description"
             },
             {
                 id:109,
-                val:"COVERAGE_TERMS"
+                val:"coverage_terms"
             }
             
         ]
     },
     {
-        id:"PRODUCT",
+        id:"Product",
         attr:[
             {
                 id:111,
-                val:"PRODUCT_NUMBER"
+                val:"product_number"
             },
             {
                 id:54,
-                val:"COMPANY_NAME"
+                val:"company_name"
             },
             {
                 id:112,
-                val:"PRODUCT_PRICE"
+                val:"product_price"
             },
             {
                 id:113,
-                val:"PRODUCT_TYPE"
+                val:"product_type"
             }
         ]
     },
     {
-        id:"RECEIPT",
+        id:"Receipt",
         attr:[
             {
                 id:114,
-                val:"RECEIPT_ID"
+                val:"receipt_id"
             },
             {
                 id:27,
-                val:"PREMIUM_PAYMENT_ID"
+                val:"premium_payment_id"
             },
             {
                 id:0,
-                val:"CUST_ID"
+                val:"cust_id"
             },
             {
                 id:115,
-                val:"COST"
+                val:"cost"
             },
             {
                 id:116,
-                val:"TIME"
+                val:"time"
             }
         ]
     },
     {
-        id:"INSURANCE_POLICY_COVERAGE",
+        id:"Insurance Policy Coverage",
         attr:[
             {
                 id:21,
-                val:"AGREEMENT_ID"
+                val:"agreement_id"
             },
             {
                 id:52,
-                val:"COVERAGE_ID"
+                val:"coverage_id"
             }
         ]
     }

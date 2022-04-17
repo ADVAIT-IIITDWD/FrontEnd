@@ -43,7 +43,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="policy" name="app" value="Insurance_policy" onChange={(e)=> {
+                <input type="radio" id="policy" name="app" value="Insurance Policy" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -51,7 +51,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="payment" name="app" value="Premium_payment" onChange={(e)=> {
+                <input type="radio" id="payment" name="app" value="Premium Payment" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -75,7 +75,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="settlement" name="app" value="CLAIM_SETTLEMENT" onChange={(e)=> {
+                <input type="radio" id="settlement" name="app" value="Claim Settlement" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -83,7 +83,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="staff" name="app" value="STAFF" onChange={(e)=> {
+                <input type="radio" id="staff" name="app" value="Staff" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -91,7 +91,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="dept" name="app" value="DEPARTMENT" onChange={(e)=> {
+                <input type="radio" id="dept" name="app" value="Department" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -99,7 +99,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="office" name="app" value="OFFICE" onChange={(e)=> {
+                <input type="radio" id="office" name="app" value="Office" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -107,7 +107,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="member" name="app" value="MEMBERSHIP" onChange={(e)=> {
+                <input type="radio" id="member" name="app" value="Membership" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -115,7 +115,7 @@ const Table_select = () => {
     
             </li>
             <li>
-                <input type="radio" id="service" name="app" value="VEHICLE_SERVICE" onChange={(e)=> {
+                <input type="radio" id="service" name="app" value="Vehicle Service" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -123,7 +123,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="Nok" name="app" value="NOK" onChange={(e)=> {
+                <input type="radio" id="Nok" name="app" value="Nok" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -131,7 +131,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="company" name="app" value="INSURANCE_COMPANY" onChange={(e)=> {
+                <input type="radio" id="company" name="app" value="Insurance Company" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -139,7 +139,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="renew" name="app" value="POLICY_RENEWABLE" onChange={(e)=> {
+                <input type="radio" id="renew" name="app" value="Policy Renewable" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -147,7 +147,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="incident" name="app" value="INCIDENT" onChange={(e)=> {
+                <input type="radio" id="incident" name="app" value="Incident" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -155,7 +155,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="report" name="app" value="INCIDENT_REPORT" onChange={(e)=> {
+                <input type="radio" id="report" name="app" value="Incident Report" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -163,7 +163,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="coverage" name="app" value="COVERAGE" onChange={(e)=> {
+                <input type="radio" id="coverage" name="app" value="Coverage" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -171,7 +171,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="product" name="app" value="PRODUCT" onChange={(e)=> {
+                <input type="radio" id="product" name="app" value="Product" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -179,7 +179,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="reciept" name="app" value="RECEIPT" onChange={(e)=> {
+                <input type="radio" id="reciept" name="app" value="Receipt" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
@@ -187,7 +187,7 @@ const Table_select = () => {
 
             </li>
             <li>
-                <input type="radio" id="policy_coverage" name="app" value="INSURANCE_POLICY_COVERAGE" onChange={(e)=> {
+                <input type="radio" id="policy_coverage" name="app" value="Insurance Policy Coverage" onChange={(e)=> {
                     setsearch(e.target.value) ;
                     
                 }}/>
