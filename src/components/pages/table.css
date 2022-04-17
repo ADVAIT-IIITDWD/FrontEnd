@@ -4,7 +4,7 @@
     padding: 20px;
     font-size:25px;
     text-align: 1rem;
-}
+} */
 input{
     margin: 20px;
     padding: 10px;
@@ -16,11 +16,15 @@ input{
     grid-template-columns: 2fr 2fr 2fr;
     text-align:inherit;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: wavy;
     font-weight: 450;
     padding: 1rem;
-    margin-left: 1rem;
+    margin: 35px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px;
 }
 .btn{
     border: 1px solid grey;
@@ -33,16 +37,20 @@ input{
     color: rgb(255, 255, 255);
 
 }
-/* li:hover{
-    background-color: rgb(99, 91, 91); 
-    color: white;
-}
 .label-class{
     width: 85%;
+    padding: 7px;
   }
 
 .label-class:hover{
-    background-color: rgb(99, 91, 91); 
-    color: white;
+    background-color: rgb(189, 189, 189); 
+    color: rgb(0, 0, 0);
     border-radius: 10px;
-} */
+    padding-left: 15px;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}

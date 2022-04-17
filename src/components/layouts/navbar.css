@@ -1,8 +1,8 @@
-body {
+/* body {
   margin: 0;
   background: #181824;
   font-family: Arial;
-}
+} */
 
 .functn {
   color: white;
@@ -10,7 +10,10 @@ body {
 }
 
 nav {
-
+  margin: 0;
+  background: #000023;
+  font-family: Arial;
+  
   width: 100%;
   max-width: 300px;
   bottom: 0;

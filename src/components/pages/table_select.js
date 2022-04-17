@@ -4,6 +4,8 @@ import './table.css'
 const Table_select = () => {
   return (
     <>
+        <h2 className='heading'>Select the Table</h2>
+
         <form action="">
         <ul class="table-list ">
 
@@ -24,12 +26,12 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="policy" name="app" value="policy"/>
-                <label class = "label-class" for="policy">Insurance_Policy</label><br/>
+                <label class = "label-class" for="policy">Insurance Policy</label><br/>
     
             </li>
             <li>
                 <input type="radio" id="payment" name="app" value="payment"/>
-                <label class = "label-class" for="payment">Premium_Payment</label><br/>
+                <label class = "label-class" for="payment">Premium Payment</label><br/>
     
             </li>
             <li>
@@ -44,7 +46,7 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="settlement" name="app" value="settlement"/>
-                <label class = "label-class" for="settlement">Claim_Settlement</label><br/>
+                <label class = "label-class" for="settlement">Claim Settlement</label><br/>
 
             </li>
             <li>
@@ -69,7 +71,7 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="service" name="app" value="service"/>
-                <label  class = "label-class" for="service">Vehicle_Service</label><br/>
+                <label  class = "label-class" for="service">Vehicle Service</label><br/>
 
             </li>
             <li>
@@ -79,12 +81,12 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="company" name="app" value="company"/>
-                <label class = "label-class" for="company">Vehicle_Company</label><br/>
+                <label class = "label-class" for="company">Vehicle Company</label><br/>
 
             </li>
             <li>
                 <input type="radio" id="renew" name="app" value="renew"/>
-                <label class = "label-class" for="renew">Policy_Renewable</label><br/>
+                <label class = "label-class" for="renew">Policy Renewable</label><br/>
 
             </li>
             <li>
@@ -94,7 +96,7 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="report" name="app" value="report"/>
-                <label class = "label-class" for="report">Incident_Report</label><br/>
+                <label class = "label-class" for="report">Incident Report</label><br/>
 
             </li>
             <li>
@@ -114,7 +116,7 @@ const Table_select = () => {
             </li>
             <li>
                 <input type="radio" id="policy_coverage" name="app" value="policy_coverage"/>
-                <label class = "label-class" for="policy_coverage">Insurance_Policy_Coverage</label><br/>
+                <label class = "label-class" for="policy_coverage">Insurance Policy Coverage</label><br/>
             </li>
         </ul>   
 
