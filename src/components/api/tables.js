@@ -115,7 +115,7 @@ const tables = [
         ]
     },
     {
-        id:"Insurance policy",
+        id:"Insurance Policy",
         attr:[
             {
                 id:21,
