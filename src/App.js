@@ -2,7 +2,8 @@ import { Route, Routes, BrowserRouter  } from "react-router-dom";
 import './App.css';
 import Form from './components/pages/form';
 import Home from './components/pages/home';
-import Table_select from './components/pages/table_select';
+import SelectTable from './components/pages/SelectTable';
+import ViewTable from "./components/pages/ViewTable";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/table_select" exact element={<Table_select />} />
+        <Route path="/SelectTable" exact element={<SelectTable />} />
         <Route path="/form" exact element={<Form />} />
+        <Route path="/ViewTable" exact element={<ViewTable />} />
       </Routes>
       </BrowserRouter>
     </>

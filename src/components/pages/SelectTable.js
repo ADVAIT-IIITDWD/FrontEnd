@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import tables from '../api/tables';
 import './table.css'
 
-const Table_select = () => {
+const SelectTable = () => {
     const [search, setsearch] = useState("");
         // console.log(search);
         const navigate = useNavigate();
@@ -37,4 +37,4 @@ const Table_select = () => {
   )
 }
 
-export default Table_select;
+export default SelectTable;

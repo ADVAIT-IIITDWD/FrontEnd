@@ -64,7 +64,7 @@ const attributes = [
         max_length:20,
         min_length:0,
         placeholder:"Email",
-        pattern:'\S+.*'
+        pattern:""
     },{
         id:"cust_passport_number",
         type:"text",
