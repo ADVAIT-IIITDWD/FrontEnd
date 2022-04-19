@@ -1,0 +1,34 @@
+.heading-run{
+    color: rgb(73, 73, 146);
+    text-align:center;
+    margin-top:1rem;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.input-box{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    width: 45rem;
+    height: 10rem;
+    border-radius: 8px;
+    margin-left: 12%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.query-box{
+    background-color: rgb(102 79 126 / 1);
+    border: 1.3px solid;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-left: 18%;
+    margin-right: 20%;    
+    box-shadow: 8px 8px 23px black;
+}
+.btn
+{
+    margin-left: 45% !important;
+    margin-bottom: 2.5rem;
+    color: black;
+    background-color: aliceblue;
+}

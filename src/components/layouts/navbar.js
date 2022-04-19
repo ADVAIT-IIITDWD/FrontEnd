@@ -10,17 +10,17 @@ const Navbar = () => {
                   <div>Vehicle Insurance Database</div>
               </div>
               <ul class="vertical-menu">
-                <Link to='/table_select'>
+                <Link to='/runquery'>
                   <li><a class="functn" href="/table_select">Add Data</a></li>
                 </Link>
-                <Link to='/table_select'>
+                <Link to='/runquery'>
                   <li><a class="functn" href="/table_select">Alter Data</a></li>
                 </Link>
-                <Link to='/table_select'>
+                <Link to='/runquery'>
                   <li><a class="functn" href="/table_select">Delete Data</a></li>
                 </Link>
                   <hr/>
-                <Link to='/table_select'>
+                <Link to='/runquery'>
                   <li><a class="functn" href="/table_select">View Data</a></li>
                 </Link>
                   <hr/>
