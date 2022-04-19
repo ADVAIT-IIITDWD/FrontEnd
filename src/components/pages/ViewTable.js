@@ -1,34 +1,43 @@
 import React from 'react'
+import Employee from '../api/testAPI'
 
 function ViewTable() {
+    let attributes = Object.keys(Employee[0]);
+
+    let b = Object.keys(Employee); 
+    let c = Object.values(Employee);
+
     return (
-        <table class="table table-striped table-hover">
+        <table className="table table-striped table-hover table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    {
+                        attributes.map((attr,idx) => {
+                            return(
+                                <th scope="col" key={idx}>{attr}</th>
+                            )
+                        })
+                    }
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                {
+                    b.map((i, idx) => {
+                        return(
+                            <tr>
+                                {
+                                    attributes.map((val, idxx) => {
+                                        let value = Object.values(c[i]);
+                                        return(
+                                            <td>{value[idxx]}</td>
+                                        )
+                                    })
+                                }
+                            </tr>
+                        )
+                    })
+                }
+                
             </tbody>
         </table>
     )
