@@ -9,10 +9,10 @@
 .input-box{
     background-color: rgb(255, 255, 255);
     border: 1px solid;
-    width: 45rem;
-    height: 10rem;
+    width: 38rem;
+    height: 28rem;
     border-radius: 8px;
-    margin-left: 12%;
+    margin-left: 5%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -21,14 +21,43 @@
     border: 1.3px solid;
     border-radius: 8px;
     margin-top: 2rem;
-    margin-left: 18%;
-    margin-right: 20%;    
+    margin-left: 4%;
+    margin-right: 1%;    
     box-shadow: 8px 8px 23px black;
 }
-.btn
+.query-btn
 {
     margin-left: 45% !important;
     margin-bottom: 2.5rem;
     color: black;
-    background-color: aliceblue;
+    border:2rem;
+    font-size: 1.5rem;
+    width: 5rem;
+    border-radius: 8px;
+}
+.pannel{
+    width: 50%;
+    float: left;
+}
+.dragbar{
+    padding: 6px;
+    cursor: col-resize;
+    background-color: silver;
+}
+.table-box{
+    background-color: rgb(255, 255, 255);
+    border: 44px solid white;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-right: 1%;    
+    box-shadow: 8px 8px 23px black;
+    height: 37.3rem;
+    width: fit-content;
+    min-width: 40rem;
+}
+.else-condition{
+    text-align: center;
+    width: 38rem;
+    opacity: 50%;
 }

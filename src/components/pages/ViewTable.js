@@ -3,10 +3,6 @@ import Employee from '../api/testAPI'
 
 function ViewTable() {
     let attributes = Object.keys(Employee[0]);
-
-    let b = Object.keys(Employee); 
-    let c = Object.values(Employee);
-
     return (
         <table className="table table-striped table-hover table-bordered">
             <thead>
@@ -22,12 +18,12 @@ function ViewTable() {
             </thead>
             <tbody>
                 {
-                    b.map((i, idx) => {
+                    Employee.map((i, idx) => {
                         return(
-                            <tr>
+                            <tr key={idx}>
                                 {
                                     attributes.map((val, idxx) => {
-                                        let value = Object.values(c[i]);
+                                        let value = Object.values(Employee[idx]);
                                         return(
                                             <td>{value[idxx]}</td>
                                         )

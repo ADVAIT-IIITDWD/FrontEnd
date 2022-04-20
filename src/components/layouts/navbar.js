@@ -22,14 +22,6 @@ const Navbar = () => {
                   <hr/>
                 <Link to='/runquery'>
                   <li><a class="functn" href="/table_select">View Data</a></li>
-                <Link to='/SelectTable'>
-                  <li><a class="functn" href="/SelectTable">Add Data</a></li>
-                </Link>
-                <Link to='/SelectTable'>
-                  <li><a class="functn" href="/SelectTable">Alter Data</a></li>
-                </Link>
-                <Link to='/SelectTable'>
-                  <li><a class="functn" href="/SelectTable">Delete Data</a></li>
                 </Link>
                   <hr/>
                 <Link to='/ViewTable'>

@@ -1,43 +1,112 @@
-import React,{ useState } from 'react';
-import './run_query.css';
+import React, { useState } from "react";
+// import Employee from '../api/testAPI'
+import "./run_query.css";
 import axios from "axios";
 
-
 const RunQuery = () => {
-    const [query, setquery] = useState("");
-    const handelQuery = (e) =>{
-        let getQuery = e.target.value;
-        setquery(getQuery);
-        // console.log(query);
-    }
-    const postQuery = async() =>{
+  const [query, setquery] = useState("");
+  const [attributes, setattributes] = useState([]);
+  const [table_data, settable_data] = useState([]);
+  const [tableget, settableget] = useState(false);
+  //   let tableget = false;
+  const handelQuery = (e) => {
     try {
-        // console.log(query);
-            const res = await axios.post("http://localhost:5000/query_to_run",{
-                query
-            });
-        if(res){
-            console.log(res.data);
-            // console.log("Done");
-        }else{
-            console.log("Error");
-        }
-
+      setquery(e.target.value);
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
+  };
+  const postQuery = async () => {
+    try {
+      const res = await axios.post("http://localhost:5000/query_to_run", {
+        query,
+      });
+      if (res) {
+        if (res.data === "error") {
+          settableget(false);
+          window.alert("Error in query");
+        } else {
+          settableget(true);
+          settable_data(res.data);
+          setattributes(Object.keys(table_data[0]));
+        //   console.log(res.data);
+        //   console.log(attributes);
+        }
+      } else {
+        settableget(false);
+        console.log("Error");
+      }
+    } catch (error) {
+      settableget(false);
+      console.log(error);
     }
+  };
+
   return (
     <>
-    <section>
-        <h2><div className='heading-run'>Run your Query Here</div></h2>
-        <div className='query-box'>
-        <textarea className='input-box' type="text" name="query" id='query_input' minLength='1' placeholder='Enter the SQL query' onChange={handelQuery}/>
-        <button type="button" class="btn btn-outline-success" onClick={postQuery} >Run</button>
+      <section className="pannel">
+        <h2>
+          <div className="heading-run">Run your Query Here</div>
+        </h2>
+        <div className="query-box">
+          <textarea
+            className="input-box"
+            type="text"
+            name="query"
+            id="query_input"
+            minLength="1"
+            placeholder="Enter the SQL query"
+            onChange={handelQuery}
+          />
+          <button
+            type="button"
+            class="query-btn btn-outline-success"
+            onClick={postQuery}
+          >
+            Run
+          </button>
         </div>
-    </section>
+      </section>
+      <section className="pannel">
+        <h2>
+          <div className="heading-run">Result</div>
+        </h2>
+        <div className="table-box">
+          {tableget ? (
+            <table className="table table-striped table-hover table-bordered">
+              <thead>
+                <tr>
+                  {attributes.map((attr, idx) => {
+                    return (
+                      <th scope="col" key={idx}>
+                        {attr}
+                      </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+              <tbody>
+                {table_data.map((i, idx) => {
+                  return (
+                    <tr key={idx}>
+                      {attributes.map((val, idxx) => {
+                        let value = Object.values(table_data[idx]);
+                        return <td>{value[idxx]}</td>;
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          ) : (
+            <h1>
+              <div className="else-condition">Output</div>
+            </h1>
+          )}
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
 export default RunQuery;
