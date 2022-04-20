@@ -9,7 +9,7 @@ const RunQuery = () => {
   const [table_data, settable_data] = useState([]);
   const [tableget, settableget] = useState(false);
   //   let tableget = false;
-  const handelQuery = (e) => {
+  const handelQuery = async(e) => {
     try {
       setquery(e.target.value);
     } catch (error) {
@@ -27,10 +27,11 @@ const RunQuery = () => {
           window.alert("Error in query");
         } else {
           settableget(true);
+          // console.log(tableget);
           settable_data(res.data);
-          setattributes(Object.keys(table_data[0]));
-        //   console.log(res.data);
-        //   console.log(attributes);
+          // console.log(table_data);
+          setattributes(Object.keys(res.data[0]));
+          // console.log(attributes);
         }
       } else {
         settableget(false);
