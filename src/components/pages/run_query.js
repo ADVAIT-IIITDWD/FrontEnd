@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import Employee from '../api/testAPI'
+import Loading from "../layouts/loding";
 import "./run_query.css";
 import axios from "axios";
 
@@ -8,6 +9,7 @@ const RunQuery = () => {
   const [attributes, setattributes] = useState([]);
   const [table_data, settable_data] = useState([]);
   const [tableget, settableget] = useState(false);
+  const [loading, setloading] = useState(false);
   //   let tableget = false;
   const handelQuery = async(e) => {
     try {
@@ -16,27 +18,33 @@ const RunQuery = () => {
       console.log(error);
     }
   };
+
+
   const postQuery = async () => {
     try {
+      setloading(true);
       const res = await axios.post("http://localhost:5000/query_to_run", {
         query,
       });
-      if (res) {
-        if (res.data === "error") {
-          settableget(false);
-          window.alert("Error in query");
+      setTimeout(()=>{
+        setloading(false);
+        if (res) {
+          if (res.data === "error") {
+            settableget(false);
+            window.alert("Error in query");
+          } else {
+            settableget(true);
+            // console.log(tableget);
+            settable_data(res.data);
+            // console.log(table_data);
+            setattributes(Object.keys(res.data[0]));
+            // console.log(attributes);
+          }
         } else {
-          settableget(true);
-          // console.log(tableget);
-          settable_data(res.data);
-          // console.log(table_data);
-          setattributes(Object.keys(res.data[0]));
-          // console.log(attributes);
+          settableget(false);
+          console.log("Error");
         }
-      } else {
-        settableget(false);
-        console.log("Error");
-      }
+      } ,1500)
     } catch (error) {
       settableget(false);
       console.log(error);
@@ -57,13 +65,11 @@ const RunQuery = () => {
             id="query_input"
             minLength="1"
             placeholder="Enter the SQL query"
-            onChange={handelQuery}
-          />
+            onChange={handelQuery}/>
           <button
             type="button"
             class="query-btn btn-outline-success"
-            onClick={postQuery}
-          >
+            onClick={postQuery}>
             Run
           </button>
         </div>
@@ -72,6 +78,9 @@ const RunQuery = () => {
         <h2>
           <div className="heading-run">Result</div>
         </h2>
+      {loading? (
+    <Loading/>
+    ) :(
         <div className="table-box">
           {tableget ? (
             <table className="table table-striped table-hover table-bordered">
@@ -105,6 +114,7 @@ const RunQuery = () => {
             </h1>
           )}
         </div>
+    )}
       </section>
     </>
   );

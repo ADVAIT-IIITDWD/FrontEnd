@@ -5,6 +5,7 @@ import Home from './components/pages/home';
 import RunQuery from "./components/pages/run_query";
 import SelectTable from './components/pages/SelectTable';
 import ViewTable from "./components/pages/ViewTable";
+import Loding from "./components/layouts/loding";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/form" exact element={<Form />} />
         <Route path="/runquery" exact element={<RunQuery />} />
         <Route path="/ViewTable" exact element={<ViewTable />} />
+        <Route path="/loding" exact element={<Loding />} />
       </Routes>
       </BrowserRouter>
     </>
