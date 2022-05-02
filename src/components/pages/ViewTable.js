@@ -1,5 +1,5 @@
 import React from 'react'
-import Employee from '../api/testAPI'
+import Employee from '../api/Queries'
 
 function ViewTable() {
     let attributes = Object.keys(Employee[0]);

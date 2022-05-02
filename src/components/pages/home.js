@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './../layouts/navbar';
 import QueryCard from './../layouts/QueryCard';
+import Queries from '../api/Queries';
 import './home.css';
 
 const home = () => {
@@ -14,12 +15,13 @@ const home = () => {
                 <section class="white-section" id="pricing">
 
                     <div class="row">
-                        <QueryCard num="1"/>
-                        <QueryCard num="2"/>
-                        <QueryCard num="3"/>
-                        <QueryCard num="4"/>
-                        <QueryCard num="5"/>
-                        <QueryCard num="6"/>
+                            {
+                                Queries.map((ele,idx) =>{
+                                    return(
+                                        <QueryCard num={ele.id} querydis={ele.querydis} key={idx} query={ele.query} />
+                                        )
+                                })
+                            }
                     </div>
 
 
