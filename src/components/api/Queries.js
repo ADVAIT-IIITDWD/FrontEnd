@@ -11,11 +11,10 @@ const Queries = [
     querydis:
       "Retrieve Customer and Vehicle details who has been involved in an incident and claim status is pending-Customer, vehicle, claim status, incident",
     query: 
-        `SELECT * FROM T16_CUSTOMER C WHERE C.T16_CUST_ID IN ( 
-            SELECT P.T16_CUST_ID FROM T16_PREMIUM_PAYMENT P WHERE 
-            P.T16_CUST_ID = C.T16_CUST_ID AND P.T16_PREMIUM_PAYMENT_AMOUNT >
-            ( SELECT SUM(T16_CUST_ID) FROM T16_CUSTOMER ));
-        SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
+        `select c.cust_id from advait_customer as c 
+        where c.cust_id in (
+              select cust_id from advait_premium_payment where premium_payment_amount > (
+                    select sum(cust_id) from advait_customer));`
 },{
     id: 3,
     querydis:
