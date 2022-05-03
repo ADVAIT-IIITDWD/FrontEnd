@@ -81,13 +81,8 @@ const RunQuery = () => {
             placeholder="Enter the SQL query"
             onChange={handelQuery}
           />
-          <button
-            type="button"
-            class="query-btn btn-outline-success"
-            onClick={postQuery}
-          >
-            Run
-          </button>
+          <button type="button" class="query-btn btn-outline-success" onClick={postQuery}>Run</button>
+          <button type="button" class="query-btn btn-outline-success">Run</button>
         </div>
       </section>
       <section className="pannel">

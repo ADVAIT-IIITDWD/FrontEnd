@@ -11,21 +11,7 @@ const Navbar = () => {
               </div>
               <ul class="vertical-menu">
                 <Link to='/runquery'>
-                  <li><a class="functn" href="/table_select">Add Data</a></li>
-                </Link>
-                <Link to='/runquery'>
-                  <li><a class="functn" href="/table_select">Alter Data</a></li>
-                </Link>
-                <Link to='/runquery'>
-                  <li><a class="functn" href="/table_select">Delete Data</a></li>
-                </Link>
-                  <hr/>
-                <Link to='/runquery'>
-                  <li><a class="functn" href="/table_select">View Data</a></li>
-                </Link>
-                  <hr/>
-                <Link to='/ViewTable'>
-                  <li><a class="functn" href="/ViewTable">View Data</a></li>
+                  <li><a class="functn" href="/table_select">Run Query</a></li>
                 </Link>
                   <hr/>
                   <li id="user-info" style={{marginTop: "170%"}}>Team ADVAIT<span>DBMS</span></li>
