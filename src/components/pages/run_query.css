@@ -61,3 +61,18 @@
     width: 38rem;
     opacity: 50%;
 }
+
+.back-btn{
+    color: black;
+    background-color: white;
+    margin-left: 9rem;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    border-radius:8px ;
+    padding-left:1rem ;
+    padding-right:1rem ;
+}
+.back-btn:hover{
+    color: white;
+    background-color: red;
+}

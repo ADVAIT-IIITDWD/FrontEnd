@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Loading from "../layouts/loding";
 import "./run_query.css";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const RunQuery = () => {
   const [query, setquery] = useState("");
@@ -13,7 +13,14 @@ const RunQuery = () => {
   const [loading, setloading] = useState(false);
 
   const location = useLocation();
-
+  const navigate = useNavigate();
+  const handelback = () =>{
+    try{
+      navigate('/');
+    }catch(err){
+      console.log(err);
+    }
+  }
   // const setaQuery = () =>{
   //   console.log("hi");
   //   setquery(location.state.query);
@@ -82,7 +89,7 @@ const RunQuery = () => {
             onChange={handelQuery}
           />
           <button type="button" class="query-btn btn-outline-success" onClick={postQuery}>Run</button>
-          <button type="button" class="query-btn btn-outline-success">Run</button>
+          <button type="button" class="back-btn" onClick={handelback}>Back</button>
         </div>
       </section>
       <section className="pannel">
