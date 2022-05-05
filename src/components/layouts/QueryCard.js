@@ -11,7 +11,7 @@ const QueryCard = (props) => {
   return (
     <>
       <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card text-center">
+        <div class="card text-center h-100">
           <div class="card-header">
             <h2>Query {props.num}</h2>
           </div>
@@ -20,7 +20,7 @@ const QueryCard = (props) => {
             <p>{props.querydis}</p>
             <button
               type="button"
-              class="d-grid gap-2 col-12 mx-auto btn btn-block btn-outline-success btn-lg "
+              class="d-grid gap-2 col-12 mx-auto btn btn-block btn-outline-success btn-lg bottom-btn"
               onClick={() =>{handelonClick(props.id, props.query)}}
             >
               Run
