@@ -14,7 +14,7 @@ const Navbar = () => {
                   <li><a class="functn" href="/table_select">Run Query</a></li>
                 </Link>
                   <hr/>
-                  <li id="user-info" style={{marginTop: "170%"}}>Team ADVAIT<span>DBMS</span></li>
+                  <li id="user-info" style={{marginTop:"378%"}}>Team ADVAIT<span>DBMS</span></li>
               </ul>
           </nav>
     </>
