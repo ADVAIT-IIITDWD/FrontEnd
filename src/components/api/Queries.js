@@ -4,8 +4,7 @@ const Queries = [
     querydis:
       "Retrieve Customer and Vehicle details who has been involved in an incident and claim status is pending-Customer, vehicle, claim status, incident",
     query:
-      `select c.cust_id, v.vehicle_id from ADVAIT_customer as c, advait_vehicle as v
-      where c.cust_id in (select cust_id from advait_claim where calim_status is null);`,
+      "SELECT c.cust_id, v.vehicle_id FROM ADVAIT_customer C, ADVAIT_vehicle V WHERE V.CUST_ID = C.CUST_ID AND C.CUST_ID IN ( SELECT C1.CUST_ID FROM ADVAIT_claim C1 WHERE C1.claim_status = 'PENDING' AND C1.INCIDENT_ID IN (SELECT I.INCIDENT_ID FROM ADVAIT_incident_report I WHERE I.CUST_ID = C1.CUST_ID AND I.vehicle_id = V.vehicle_id ));"
   },{
     id: 2,
     querydis:
@@ -20,9 +19,8 @@ const Queries = [
     querydis:
       "Retrieve Customer and Vehicle details who has been involved in an incident and claim status is pending-Customer, vehicle, claim status, incident",
     query:
-    `SELECT C.T16_COMPANY_NAME FROM T16_INSURANCE_COMPANY C INNER JOIN T16_PRODUCT P ON P.T16_COMPANY_NAME=C.T16_COMPANY_NAME GROUP BY P.T16_COMPANY_NAME
-    HAVING COUNT(*) >ALL(SELECT COUNT(*) FROM T16_INSURANCE_COMPANY GROUP BY T16_COMPANY_NAME HAVING COUNT(T16_COMPANY_LOCATION)>1);
-    `
+    `SELECT C.COMPANY_NAME FROM advait_INSURANCE_COMPANY C INNER JOIN advait_PRODUCT P ON P.COMPANY_NAME=C.COMPANY_NAME GROUP BY P.COMPANY_NAME
+    HAVING COUNT(*) >ALL(SELECT COUNT(*) FROM advait_INSURANCE_COMPANY GROUP BY COMPANY_NAME HAVING COUNT(COMPANY_LOCATION)>1);`
   },{
     id: 4,
     querydis:
