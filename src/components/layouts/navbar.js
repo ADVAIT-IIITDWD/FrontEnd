@@ -11,7 +11,7 @@ const Navbar = () => {
               </div>
               <ul class="vertical-menu">
                 <Link to='/runquery'>
-                  <li><a class="functn" href="/table_select">Run Query</a></li>
+                  <li><a class="functn" href="/table_select">Run Queries</a></li>
                 </Link>
                   <hr/>
                   <li id="user-info" style={{marginTop:"378%"}}>Team ADVAIT<span>DBMS</span></li>

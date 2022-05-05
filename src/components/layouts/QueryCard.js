@@ -11,12 +11,12 @@ const QueryCard = (props) => {
   return (
     <>
       <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card text-center ">
+        <div class="card text-center">
           <div class="card-header">
             <h2>Query {props.num}</h2>
           </div>
           <div class="card-body">
-            <h2 class="price-text">CSP</h2>
+            <h2 class="price-text">Problem Statement</h2>
             <p>{props.querydis}</p>
             <button
               type="button"
